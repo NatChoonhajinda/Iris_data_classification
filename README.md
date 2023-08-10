@@ -1,9 +1,16 @@
 # Iris_data_classification
  using tensorflow and flask to deploy iris data classification api
+![image](https://github.com/NatChoonhajinda/Iris_data_classification/assets/98221086/ca34d9f2-f9fb-4d19-83d3-c1ec9f9caada)
 
 # Data
 
-![image](https://github.com/NatChoonhajinda/Iris_data_classification/assets/98221086/fdd31105-99c2-46cf-833c-6bab193718f9)
+![image](https://github.com/NatChoonhajinda/Iris_data_classification/assets/98221086/65f564e3-88f1-457c-8c47-2643b745a0f8)
+
+# pre-processing
+```
+dataset = pd.get_dummies(dataset, columns=['species'])
+```
+![image](https://github.com/NatChoonhajinda/Iris_data_classification/assets/98221086/779a600b-8d49-4f5e-8e5f-0dd1159b9cc9)
 
 # tensorflow model
 - The main purpose of this project is deploy the tensorflow model by Flask. 

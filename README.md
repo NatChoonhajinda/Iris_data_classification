@@ -4,6 +4,11 @@
 # Data
 
 ![image](https://github.com/NatChoonhajinda/Iris_data_classification/assets/98221086/fdd31105-99c2-46cf-833c-6bab193718f9)
+# pre-processing
+```
+dataset = pd.get_dummies(dataset, columns=['species'])
+```
+![image](https://github.com/NatChoonhajinda/Iris_data_classification/assets/98221086/779a600b-8d49-4f5e-8e5f-0dd1159b9cc9)
 
 # tensorflow model
 - The main purpose of this project is deploy the tensorflow model by Flask. 

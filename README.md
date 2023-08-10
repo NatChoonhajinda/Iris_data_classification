@@ -2,7 +2,7 @@
  using tensorflow and flask to deploy iris data classification api
 
 # Data
-use 
+
 ![image](https://github.com/NatChoonhajinda/Iris_data_classification/assets/98221086/fdd31105-99c2-46cf-833c-6bab193718f9)
 
 # tensorflow model
@@ -37,3 +37,47 @@ plt.plot(pd.DataFrame(history.history)['val_accuracy'],label = "val_accuracy")
 plt.legend()
 ```
 ![image](https://github.com/NatChoonhajinda/Iris_data_classification/assets/98221086/8aa3bcbd-e694-42b9-b76f-19677d174748)
+
+# FLASK
+Load model to Flask and pass Json data by postman
+```
+from flask import Flask ,request
+import tensorflow as tf
+import numpy as np
+import json
+import pandas as pd
+
+loaded_model = tf.keras.models.load_model('my_model')
+app = Flask(__name__)
+
+@app.route('/', methods=['POST'])
+def return_word():
+    #load tf model
+    loaded_model = tf.keras.models.load_model('my_model')
+    # get request data
+    data = request.get_json()
+    data_array = pd.DataFrame(data)
+    
+    
+    #predict
+    ans = np.round_(loaded_model.predict(data_array))
+    json_data  = json.dumps(ans.tolist())
+    return json_data
+
+if __name__ == '__main__':
+    app.run()
+
+
+```
+# pros
+-Flexible
+-Good for deploy tensorflow model (with server)
+-Automate
+
+# Problem
+- Flask doesn't work sometimes with chatgpt code
+- miss format Json file that's make AI broke(if Ai doesn't make a good classify. make sure recheck the json u pass in)
+
+# personal Problem
+- lack of Debug experience
+- lack of Back-end experience

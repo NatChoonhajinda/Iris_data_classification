@@ -3,7 +3,8 @@
 
 # Data
 
-![image](https://github.com/NatChoonhajinda/Iris_data_classification/assets/98221086/fdd31105-99c2-46cf-833c-6bab193718f9)
+![image](https://github.com/NatChoonhajinda/Iris_data_classification/assets/98221086/65f564e3-88f1-457c-8c47-2643b745a0f8)
+
 # pre-processing
 ```
 dataset = pd.get_dummies(dataset, columns=['species'])

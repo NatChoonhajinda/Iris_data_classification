@@ -6,6 +6,14 @@
 ![image](https://github.com/NatChoonhajinda/Iris_data_classification/assets/98221086/fdd31105-99c2-46cf-833c-6bab193718f9)
 
 # tensorflow model
+- The main purpose of this project is deploy the tensorflow model by Flask. 
+- i not pay much attention to AI model because it's still good.
+- the main concept is use RELU to extract feature and then use SofeMax to classify
+  Note
+  - Softmax return length of Array equal to how much data you want to classify
+  - it's something like this [3.26865047e-05, 8.21033776e-01, 1.78933561e-01]
+  - make sure you use "Round" to make it 0 , 1
+  - more info "https://www.geeksforgeeks.org/numpy-round_-python/"
 ```
 model = tf.keras.models.Sequential([
 tf.keras.layers.Dense(4, activation='relu'),
@@ -70,9 +78,9 @@ if __name__ == '__main__':
 
 ```
 # pros
--Flexible
--Good for deploy tensorflow model (with server)
--Automate
+- Flexible
+- Good for deploy tensorflow model (with server)
+- Automate
 
 # Problem
 - Flask doesn't work sometimes with chatgpt code

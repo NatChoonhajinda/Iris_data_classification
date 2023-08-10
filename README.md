@@ -1,5 +1,6 @@
 # Iris_data_classification
  using tensorflow and flask to deploy iris data classification api
+![image](https://github.com/NatChoonhajinda/Iris_data_classification/assets/98221086/ca34d9f2-f9fb-4d19-83d3-c1ec9f9caada)
 
 # Data
 

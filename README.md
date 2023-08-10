@@ -92,6 +92,8 @@ if __name__ == '__main__':
 # Problem
 - Flask doesn't work sometimes with chatgpt code
 - miss format Json file that's make AI broke(if Ai doesn't make a good classify. make sure recheck the json u pass in)
+- sometimes it's show error like this when use sklearn version but it's fine.
+![image](https://github.com/NatChoonhajinda/Iris_data_classification/assets/98221086/131bfeb8-7ad1-4c37-97ce-85b767543c7e)
 
 # personal Problem
 - lack of Debug experience
